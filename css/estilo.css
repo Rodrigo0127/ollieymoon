@@ -1,0 +1,259 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins);
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: #2a5873;
+}
+
+main {
+	width: 90%;
+	background-color: #fef6ed;
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px solid black;
+}
+
+#personalidad{
+	margin-left: 20px;
+	margin-right: 10px;
+}
+#apariencia{
+	margin-left: 10px;
+	margin-right: 10px;
+}
+#contexto{
+	margin-left: 10px;
+	margin-right: 20px;
+}
+.margen-de-micrositio{
+	padding: 20px;
+}
+
+
+
+header{
+	background-color: #54acef; 
+}
+
+
+article p{
+	font-size: 20px;
+}
+
+article h2{
+	font-size: 25px;
+
+}
+
+.galeria{
+
+	margin: 100px auto;
+	display: inline-block;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.galeria .galeria-img6{overflow:hidden;}
+
+.galeria .galeria-img6 img{
+object-fit: cover;
+}
+
+.galeria .galeria-img2 img{
+object-fit: cover;
+float 
+}
+
+.galeria a{
+	width: 100%;
+}
+
+.galeria img:hover{
+  	opacity:0.7 !important; 	
+}
+
+#wireframe img:hover{
+  	opacity:0.7 !important; 	
+}
+
+
+
+
+footer{
+	height: 70px;
+	background: #54acef;
+
+}
+
+#minombre{
+	float: right;
+	margin-right: 20px;
+	margin-top: 25px;
+	display: inline;
+	text-decoration: none;
+	font-size: 12px;
+	color: white;
+}
+
+#logos{
+	margin-left: 20px;	
+}
+
+footer img{
+	margin-top: 15px;
+}
+
+header h1{
+	color: white;
+	font-size: 40px;
+	padding-bottom: 20px;
+	text-shadow: 0 0 8px #000;
+}
+
+h2, h3, h4{
+	font-family: 'Poppins';
+}
+ 
+p{
+	font-family: 'Rubik';
+}
+
+h1{
+	font-family: 'Karla';
+}
+
+.rubik{
+	font-family: 'Rubik';
+}
+
+.karla{
+	font-family: 'Karla';
+}
+
+#fotos img{
+	border: 1px solid black;
+	border-radius: 20px;
+}
+
+header img{
+	margin-top: 20px;
+}
+
+section{
+	background: #edeef5;
+}
+
+#personalidad img, #apariencia img, #contexto img{
+	box-shadow: 5px 5px 5px #2e2f36;
+   -webkit-box-shadow: 5px 5px 5px #2e2f36;
+   -moz-box-shadow: 5px 5px 5px #2e2f36;
+}
+
+
+
+/*ACA COMIENZA TODO LO RESPONSIVE */
+
+. /* Vista de celular*/
+@media (min-width: 576px) and (max-width: 767px) {
+
+
+			#triplecolumna{
+				column-count: 1;
+				padding-top: 40px;
+			}
+			#fotos-columna{
+				column-count: 1;
+			}
+			header img{
+				display: none;
+			}
+
+			#apariencia{
+				margin-top: 40px;
+			}
+			#contexto{
+				margin-top: 40px;
+			}
+			header h1{
+				padding-top: 20px;
+			}
+			main{
+				width: 100%;
+			}
+
+ }
+
+/*Vista celular/tablet */
+@media  (max-width: 991px){
+
+		#triplecolumna{
+			column-count: 1;
+			padding-top: 40px;
+		}
+		#fotos-columna{
+			column-count: 1;
+		}
+		header img{
+			display: none;
+		}
+		#apariencia{
+				margin-top: 40px;
+		}
+
+		#contexto{
+			margin-top: 40px;
+		}
+		header h1{
+			padding-top: 20px;
+			}
+		main{
+				width: 100%;
+			}
+
+
+}
+
+
+/*Vista tablet */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+			#triplecolumna{
+				column-count: 3;
+				padding-top: 40px;
+			}
+
+			#fotos-columna{
+				column-count: 2;
+			}
+
+
+}
+
+
+
+/*Vista computadora */
+@media (min-width: 1200px) {
+
+			#triplecolumna{
+				column-count: 3;
+				padding-top: 40px;
+			}
+			
+			#fotos-columna{
+				column-count: 4;
+			}
+			
+
+  }
+
+
+article {
+    break-inside: avoid-column;
+}
